@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <style>
+			
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+			.groly img{
+				width: 100%;
+				display: block;
+				border: 0;
+			}
+		</style>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+      		swipeBack:true //启用右滑关闭功能
+      	});
+    </script>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">硕利科技</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon mui-icon-settings"></span>
+				<span class="mui-tab-label">项目模块</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">联系方式</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon mui-icon-videocam"></span>
+				<span class="mui-tab-label">公司视频</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			<div id="tabbar" class="mui-control-content mui-active">
+				<div id="slider" class="mui-slider" >
+				  <div class="mui-slider-group mui-slider-loop">
+				    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				    <div class="mui-slider-item mui-slider-item-duplicate">
+				      <a href="#">
+				         <img src="img/banner01.jpg">
+				      </a>
+				    </div>
+				    <!-- 第一张 -->
+				    <div class="mui-slider-item">
+				      <a href="#">
+				        <img src="img/banner1.jpg">
+				      </a>
+				    </div>
+				    <!-- 第二张 -->
+				    <div class="mui-slider-item">
+				      <a href="#">
+				         <img src="img/banner02.jpg">
+				      </a>
+				    </div>
+				    <!-- 第三张 -->
+				    <div class="mui-slider-item">
+				      <a href="#">
+				        <img src="img/banner01.jpg">
+				      </a>
+				    </div>
+				    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				    <div class="mui-slider-item mui-slider-item-duplicate">
+				      <a href="#">
+				         <img src="img/banner1.jpg">
+				      </a>
+				    </div>
+				  </div>
+				  <div class="mui-slider-indicator">
+				    <div class="mui-indicator mui-active"></div>
+				    <div class="mui-indicator"></div>
+				    <div class="mui-indicator"></div>
+				  </div>
+				</div>
+				<p>新闻列表</p>
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-media">
+				        <a href="html/detail.html">
+				            <img class="mui-media-object mui-pull-left" src="https://i.niupic.com/images/2017/10/20/Ll9fFg.png">
+				            <div class="mui-media-body">
+				                硕利科技
+				                <p class="mui-ellipsis">硕利科技官网正式上线尊敬的用户:为充分发挥互联网的媒体功能，给广大客户提供一个更好的服务交流平台，经过精心的策划和</p>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media">
+				        <a href="html/detail.html">
+				            <img class="mui-media-object mui-pull-left" src="https://i.niupic.com/images/2017/10/20/Ll9fFg.png">
+				            <div class="mui-media-body">
+				                硕利科技
+				                <p class="mui-ellipsis">硕利科技官网正式上线尊敬的用户:为充分发挥互联网的媒体功能，给广大客户提供一个更好的服务交流平台，经过精心的策划和</p>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media">
+				        <a href="html/detail.html">
+				            <img class="mui-media-object mui-pull-left" src="https://i.niupic.com/images/2017/10/20/Ll9fFg.png">
+				            <div class="mui-media-body">
+				                硕利科技
+				                <p class="mui-ellipsis">硕利科技官网正式上线尊敬的用户:为充分发挥互联网的媒体功能，给广大客户提供一个更好的服务交流平台，经过精心的策划和</p>
+				            </div>
+				        </a>
+				    </li>
+				</ul>
+				<p>公司荣誉</p>
+				<ul class="mui-table-view groly">
+				        <li class="mui-table-view-cell">
+				            <img src="img/img01.jpg"/>
+				        </li>
+				        <li class="mui-table-view-cell">
+				            <img src="img/img02.jpg"/>
+				        </li>
+				        <li class="mui-table-view-cell">
+				            <img src="img/img03.jpg"/>
+				        </li>
+				    </ul>
+			</div>
+			<div id="tabbar-with-chat" class="mui-control-content">
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(img/任务帮.jpg)"></div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>共享经济体系——任务帮</p>
+							<p style="color: #333;">近年来，共享经济在世界范围内呈爆发式发展，BBC称其在中国带来的是革命性效果，一个新时代将被开启。共享经济的定义是闲置资源的使用权交易，硕利科技看中这一风口浪尖的产业，自主研发出一款基于LBS定位功能的C2C互联网平台——任务帮，第一次提出共享“人”的理念。任务帮不仅是一个互帮互助的平台，也是一个社交，赚钱，展示自我的舞台。供需关系无缝对接，整合线下资源，提升任务配置效率。升级后的任务帮与区块链技术相结合，打造出一条“共有链”，使用更加便捷和高效。任务帮——让生活无难事。</p>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">Like</a>
+						<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(img/新零售.jpg)"></div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>硕利新零售体系</p>
+							<p style="color: #333;">运用大数据，人工智能等先进技术，通过“线上硕利商城+线下智能集合店/O2O合作实体店+现代物流“的商业运作模式，打造国内第一家规模大、品类全、品质好、价格惠、服务优的O2O+F2C新零售平台，与区块链产业相结合，实现购物增值，为用户打造全新购物体验。截止目前为止，商城整合到位的供应链产品，单品多达20000余件。后续我们将加大力度整合其他供应链渠道，力争商城产品突破10万个SKU以上，更大限度地满足消费者的购物需求。</p>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">Like</a>
+						<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(img/VR.jpg)"></div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>硕利VR</p>
+							<p style="color: #333;">在VR在线教育领域，我们已相继完成了近百位名师课堂的场景复原和三维立体建模，打造了独一无二的全影音互动VR课堂。目前正在筹备360°全影音VR明星演唱会，一场属于视觉的饕餮盛宴有望在年底上线。预计2019年前完成硕利集团VR产业链在全国的布局。</p>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">Like</a>
+						<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(img/妆秀.jpg)"></div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>化妆品供应体系---妆秀</p>
+							<p style="color: #333;">妆秀是一个为化妆品消费者服务的多功能APP，从皮肤检测、智能推荐、模拟试妆、真假检验等方面深入发掘化妆品电商服务的意义所在。系统通过手机前置摄像头检测分析皮肤特点，通过云计算和数据处理，将皮肤的特点转化为数据形式，然后根据各种化妆品数据，分析得出适合消费者皮肤的各种化妆品，为消费者量身打造最合适的化妆品推荐。妆秀APP也一定程度上解决了目前市场上化妆品电商平台存在的问题：假货泛滥，网购不能试妆等。</p>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">Like</a>
+						<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(img/智能家居.jpg)"></div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>智能家居</p>
+							<p style="color: #333;">以住宅为平台，利用综合布线技术、网络通信技术、安全防范技术、自动控制技术、音视频技术将家居生活有关的设施集成，构建高效的住宅设施与家庭日程事务的管理系统，提升家居安全性、便利性、舒适性、艺术性，并实现环保节能的居住环境，为顾客带来高效、便捷的生活方式。</p>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">Like</a>
+						<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(img/钱咖360.jpg)"></div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>钱咖360</p>
+							<p style="color: #333;">通过整合各种贷款机构资源，根据不同客户的自身情况，为其匹配到合适贷款机构，借款方式灵活，审批通过率高，让所有用户可通过我们获取所需贷款，满足个人的资金需求。钱咖360线下实体店将深入各小区，汉街旗舰店即将盛大开业，大家敬请期待。</p>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">Like</a>
+						<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+			</div>
+			<div id="tabbar-with-contact" class="mui-control-content">
+				<div class="title">在线客服</div>
+				<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<!--<img src="../images/60x60.gif" />-->
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">婷婷</h4>
+									<span class="oa-contact-position mui-h6">在线客服1</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									3558439260
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<!--<img src="../images/60x60.gif" />-->
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">萌萌</h4>
+									<span class="oa-contact-position mui-h6">在线客服1</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									1812835379
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<!--<img src="../images/60x60.gif" />-->
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">浩浩</h4>
+									<span class="oa-contact-position mui-h6">在线客服1</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									944810190
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<!--<img src="../images/60x60.gif" />-->
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">俊俊</h4>
+									<span class="oa-contact-position mui-h6">新零售专属客服</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									3050835161
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="title">公司地址</div>
+			<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=d569ad43f9c86d9c8157b9f71157151c"></script>
+			<div id="container" style="width:90%; height: 300px;margin:0 auto"></div>
+			<script>
+             var map = new AMap.Map('container');
+             map.setZoom(16);
+             map.setCenter([114.3444322332, 30.5567705811]);
+
+             var marker = new AMap.Marker({
+                 position: [114.3444478512, 30.5567732122],
+                 map: map
+             });
+
+             marker.setMap(map);
+             marker.on('click', function (e) {
+                 infowindow.open(map, e.target.getPosition());
+             })
+             AMap.plugin('AMap.AdvancedInfoWindow', function () {
+                 infowindow = new AMap.AdvancedInfoWindow({
+                     content: '<div class="info-content">' +
+                         '硕利科技' + '</div>',
+                     offset: new AMap.Pixel(0, -30)
+                 });
+                 infowindow.open(map, [114.3444322332, 30.5567705811]);
+             })
+             AMap.plugin(['AMap.ToolBar', 'AMap.Scale', 'AMap.OverView'],
+                 function () {
+                     map.addControl(new AMap.ToolBar());
+                     map.addControl(new AMap.Scale());
+                     // map.addControl(new AMap.OverView({isOpen:true}));
+                 });
+         </script>
+			</div>
+			<div id="tabbar-with-map" class="mui-control-content">
+				<div class="title">公司最新视频</div>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" >
+						<video width="95%" height="" controls poster="img/任务帮封面_看图王.png">
+							<source src="resource/video.iphone.mp4" type="video/mp4">
+							<source src="resource/video.iphone.mp4" type="video/ogg">
+						</video>
+					</div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>任务帮</p>
+							<p style="color: #333;">任务帮,让生活无难事!</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
